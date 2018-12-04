@@ -1,0 +1,36 @@
+
+
+server:
+  port: 30000
+
+
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/health_mall?useSSL=true&serverTimezone=UTC
+    username: root
+    password: 123
+    dbcp:
+      validation-query: SELECT 1
+      test-while-idle: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-active: 10
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+
+    timeout: 3000

@@ -1,0 +1,8 @@
+server:
+  port: 30000
+
+datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/health_mall?useUnicode=true&characterEncoding=utf8&chasracterSetResults=utf8
+  username: root
+  password: 123
